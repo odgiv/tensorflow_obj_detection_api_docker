@@ -1,0 +1,14 @@
+version:"2"
+services:
+  sg_tensor:
+    build: .
+    stdin_open: true
+    tty: true
+
+    ports:
+      - "8888:8888"
+      - "6006:6006"
+    devices:
+      - /dev/nvidia0
+    volumes:
+      - ./data:home/data
