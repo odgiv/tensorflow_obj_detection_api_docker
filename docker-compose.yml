@@ -5,7 +5,7 @@ services:
     stdin_open: true
     tty: true
     ports:
-      - "8888:8888"
+      - "8887:8887"
       - "6006:6006"
     devices:
       - /dev/nvidia0
