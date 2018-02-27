@@ -3,7 +3,7 @@ services:
   sg_tensor:
     build: .
     stdin_open: true
-    tty: true
+    #tty: true
     ports:
       - "8887:8887"
       - "6006:6006"
