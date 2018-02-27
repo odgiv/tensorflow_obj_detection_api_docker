@@ -14,5 +14,8 @@ RUN cd /home/object_detection_api/models/research \
 
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod 775 /entrypoint.sh
+
+RUN mkdir /home/data /home/data/config /home/data/train_result /home/data/eval_result
+
 ENTRYPOINT ["/entrypoint.sh"]
 
