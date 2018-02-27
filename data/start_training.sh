@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# just provide file name of .config file for $1
 
 rm -rf /home/data/train_result/*
 
