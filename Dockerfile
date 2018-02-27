@@ -8,6 +8,7 @@ RUN pip install pillow lxml jupyter matplotlib
 WORKDIR /home/object_detection_api
 
 RUN git clone https://github.com/tensorflow/models.git && \
+    cd models && \
     git checkout 64f0761ba3d56d196e1d7cb1a04a4d6fe3a761c1
 
 RUN cd /home/object_detection_api/models/research \
