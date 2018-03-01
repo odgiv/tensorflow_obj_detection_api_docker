@@ -6,7 +6,7 @@ set -x -e
 rm -rf /home/data/train_result/*
 
 #cd /home/object_detection_api/models/research/object_detection
-cd /home/object_detection_api/models-master
+cd /home/object_detection_api/models-master/object_detection
 
 python train.py \
 	--logtostderr \
