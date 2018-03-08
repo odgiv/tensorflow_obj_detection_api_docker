@@ -10,4 +10,4 @@ services:
     devices:
       - /dev/nvidia0
     volumes:
-      - ./data:/home/data
+      - .:/home/
