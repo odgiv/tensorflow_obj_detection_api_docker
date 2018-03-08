@@ -4,10 +4,10 @@ set -x -e
 
 echo -n "Enter config file name: "
 read config_file_name
-echo -n "Enter .ckpt model number"
+echo -n "Enter .ckpt model number: "
 read model_num
 
-cd /home/sg/api/models-master/object_detection
+cd /home/object_detection_api/models-master/object_detection
 
 python export_inference_graph.py \
     --input_type image_tensor \
