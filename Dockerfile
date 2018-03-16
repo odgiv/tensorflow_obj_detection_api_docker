@@ -26,9 +26,9 @@ RUN unzip models-master.zip && cd /home/object_detection_api/models-master \
         && protoc object_detection/protos/*.proto --python_out=.
 
 #COPY entrypoint.sh /entrypoint.sh
-RUN chmod 775 /home/entrypoint.sh
+#RUN chmod 775 /home/data/entrypoint.sh
 
 #RUN mkdir /home/data
 
-ENTRYPOINT ["/entrypoint.sh"]
+ENTRYPOINT ["/home/data/entrypoint.sh"]
 
